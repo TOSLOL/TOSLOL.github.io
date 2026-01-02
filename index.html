@@ -1,6 +1,89 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <h1>Welcome to my website!</h1>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        /* This CSS makes it look like the Musi website */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #ff9d6c, #ff5e3a);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 20px rgba(255, 94, 58, 0.2);
+        }
+
+        /* Small icon inside the logo box */
+        .logo-icon {
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        p {
+            color: #666;
+            font-size: 1.1rem;
+            max-width: 400px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        /* The Download Button */
+        .download-btn {
+            background-color: #111;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: transform 0.2s ease;
+            display: inline-block;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo">
+        <div class="logo-icon">M</div>
+    </div>
+
+    <h1>The music app<br>without limits</h1>
+    
+    <p>Your music, organized the way you want. Check out the app that millions of people use everyday.</p>
+
+    <a href="YOUR_FILE_NAME.zip" download class="download-btn">
+        Click Here to Download
+    </a>
+
+</body>
 </html>
